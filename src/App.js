@@ -49,7 +49,7 @@ import React from "react";
 
 function App() {
   axios.defaults.withCredentials = true;
-  axios.defaults.baseURL = "http://localhost:4000/api/v1";
+  axios.defaults.baseURL = "https://ecommerce-backend-2uy5.onrender.com/api/v1";
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
   // const [stripeApiKey, setStripeApiKey] = useState("");
