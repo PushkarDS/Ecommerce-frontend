@@ -1,0 +1,119 @@
+footer {
+    background-color: rgba(15, 18, 18, 0.733);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.foot-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin: 10px;
+}
+.foot-card-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+/* .footer-icon{
+    font-size: 8px;
+} */
+/* 
+.foot-card div {
+    padding: 2%;
+} */
+
+.foot-card-head {
+    color: rgb(242, 245, 245);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(249, 247, 247, 0.689);
+    font-size: 80%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    background-color: rgba(20, 20, 20, 0.315);
+    /* height: 20px; */
+}
+
+
+.footer-icon a {
+    border: 0 none;
+    border-radius: 0;
+    color: #696763;
+    padding:0px;
+  }
+  
+  
+  .footer-icon{
+    padding: 2px;
+  }
+  
+  .footer-icon i {
+    padding: 11px 15px;
+     transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+  }
+  
+  .footer-icon i:hover{
+    color: #fff;
+     transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+  }
+  
+  
+  
+  .fa-facebook:hover {
+    background: #0083C9;
+  }
+  
+  .fa-twitter:hover  {
+      background:#5BBCEC;
+  }
+  
+  .fa-linkedin:hover  {
+      background:#FF4518;
+  }
+  
+  .fa-dribbble:hover  {
+      background:#90C9DC;
+  }
+  
+  .fa-google-plus:hover  {
+      background:#CE3C2D;
+  }
+
+@media  screen and (max-width:600px) {
+    .footer-container{
+        flex-direction: column;
+    }
+    .foot-card {
+        padding: 0;
+    }
+    .foot-card-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: start;
+        font-size: 70%;
+        padding: 2%;
+    }
+}

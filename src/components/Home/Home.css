@@ -1,0 +1,223 @@
+#home {
+    background-color: rgb(252, 252, 252);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.homeHeading{
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21,21,21,0.26);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: #1f1c1cdd;
+}
+.heading {
+  margin: 0 4% ;
+  width: 100%;
+  height: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(175, 59, 169, 0.674);
+    background-image: url("../../images/backgroundimg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    border: 2px solid rgba(0, 0, 0, 0.587);
+    transition: 1.8s;
+}
+.font-h{
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    transition: 0.51s;
+    cursor: pointer;
+}
+.head-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 30%;
+  border-radius: 20%;
+    font-size: 85%; 
+    text-align: center;
+    width: 100%;
+    padding: 4%;
+    transition: 2.6s;
+    box-shadow: 1px 1px 5px 1px blueviolet ;
+
+}
+.head-content div{
+  margin-top: 5%;
+}
+.head-link {
+    color: rgb(19, 18, 18);
+    padding: 1vmax 1vmax;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    box-shadow: 1px 1px 5px 1px blueviolet ;
+    transition: 0.5s;
+}
+.font-h:hover{
+  color: rgb(55, 0, 131);
+}
+/* .head-content:hover{
+  margin: 15% 30%;
+
+} */
+.heading:hover {
+  box-shadow: 1px 1px 5px 1px blueviolet ;
+  /* background-color: rgba(17, 16, 16, 0.34); */
+  border-radius:2%;
+  border: 1px solid white;
+  }
+
+.head-link:hover {
+  box-shadow: 1px 1px 5px 1px blueviolet inset ;
+  cursor: pointer;
+    background-color: rgba(10, 10, 120, 0.781);
+    border: 1px solid white;
+    color: azure;
+    padding: 1vmax 2vmax;
+
+}
+
+
+.head-img {
+    padding: 2%;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    mix-blend-mode:multiply;
+}
+
+
+.container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+.carouselContainer{
+  margin: auto;
+  margin-top: 4%;
+  width: 80vw;
+  /* border-radius: 200px; */
+}
+.carouselimgLink{
+  display: block;
+  height: 100%;
+  width: 100%;
+
+}
+.slide img{
+  height: 55vh;
+  image-resolution: 5000dpi;
+
+  /* width: 50vw; */
+}
+
+.slide{
+  min-width: none;
+}
+
+
+/* .c-btn{
+  background: #0000005c;
+} */
+
+/* .thumbs-wrapper{
+  display: none;
+} */
+
+.product-section{
+  background-color: aliceblue;
+}
+  .productCard {
+    padding: 1.5vmax;
+    width: 17.8vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    background-color: rgb(255, 255, 255);
+    margin: 0.5vmax;
+    border-radius: 25%;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    box-shadow: 1px 1px 5px rgba(15, 15, 15, 0.26);
+  }
+  
+  .productCard > img {
+    text-align: center;
+    justify-content: center;
+    width: 15vmax;
+    height: 14vmax;
+    padding: 4%;
+  }
+  
+  .productCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .productCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  
+  .productCard > p {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .productCard > span {
+    margin: 0.5vmax;
+    color: blueviolet;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+    text-align: center;
+  }
+  
+  .productCard:hover {
+    box-shadow: 1px 2px 5px blueviolet;
+    transform: translateY(-0.5vmax);
+  }
+  
+  @media screen and (max-width: 600px) {
+    /* .carousel{
+      display: none;
+    } */
+    .carouselContainer{
+      margin: auto;
+      margin-top: 2%;
+      width: 100vw;
+    }
+    .productCard > p {
+      font-size: 1.7vmax;
+    }
+  
+    .productCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .productCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .productCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }

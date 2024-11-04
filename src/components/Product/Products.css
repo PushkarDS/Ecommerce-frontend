@@ -1,0 +1,181 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5vmax 5vmax;
+  justify-content: center;
+  min-height: 30vh;
+  background: rgb(219, 205, 230);
+background: linear-gradient(90deg, rgb(241, 238, 243) 40%, rgb(213, 184, 227) 81%);
+}
+
+.paginationBox-footer {
+  display: flex;
+  justify-content: center;
+  margin: 2vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgba(146, 168, 187, 0.432);
+  list-style: none;
+  border: 1px solid rgba(192, 70, 155, 0.888);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* .page-item:first-child {
+  border-radius: 5px 0 0 5px;
+} */
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 200 1vmax "Roboto";
+  color: rgb(168, 10, 102);
+  border: none;
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgba(179, 54, 145, 0.413);
+  color: black;
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: rgb(140, 27, 184);
+}
+
+.pageLinkActive {
+  color: rgb(235, 230, 230);
+  /* border: solid black; */
+  font-size: large  ;
+}
+.filterBoxContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2.8%;
+}
+.filterbtn{
+  text-align: center;
+  padding: 1%;
+  align-items: center;
+  height: auto;
+  width: 20vw;
+  border:1px solid  #818181;
+  cursor: pointer;
+}
+.filterbtn:hover{
+  background-color: blueviolet;
+  color: #f1f1f1;
+}
+.dropDown {
+  /* height: 50%; */
+  height: 0px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(49, 22, 65, 0.9); */
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.dropDown-content {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* padding: 1%; */
+  /* top: 25%; */
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* margin-top: 30px; */
+}
+
+.dropDown .close{
+  position: relative;
+  font-size: 100%;
+  padding: 1%;
+  padding-right: 10px;
+  padding-left: 12px;
+  transition: 0.6s;
+  cursor: pointer;
+  /* border-radius: 40%; */
+}
+.dropDown .close:hover{
+  background-color: #818181;
+  color: #f1f1f1;
+}
+.filterBox {
+  width: 20vmax;
+  padding: 2%;
+  /* position: absolute; */
+  margin: auto;
+
+}
+fieldset{
+  margin: 2%;
+}
+
+.categoryBox {
+  padding: 0%;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: rgb(55, 97, 214);
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+}

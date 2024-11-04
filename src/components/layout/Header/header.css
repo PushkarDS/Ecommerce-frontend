@@ -1,0 +1,253 @@
+.top-header{
+  display: flex;
+  color:#000000;
+  background-color: #f1f1f1;
+  justify-content: space-between;
+}
+.searchInHeader{
+  /* margin: 1vmax; */
+  padding: 0.2vmax;
+}
+.searchInHeader input{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+  background-color: white;
+  border: none;
+  color: rgba(0, 0, 0, 0.637);
+  padding: 1vmax 2vmax;
+  width: 50%;
+  outline: none;
+  border-radius: 0%;
+  font: 300 1vmax cursive;
+  box-sizing: border-box;
+  /* height: 8%; */
+}
+.searchInHeader input[type="submit"] {
+  /* height: 8%; */
+  border-radius: 0%;
+  background-color: blueviolet;
+  border: none;
+  /* padding: 1vmax; */
+  width: 30%;
+  font: 300 1vmax "Roboto";
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+.searchInHeader input[type="submit"]:hover {
+  background-color: rgb(55, 97, 214);
+}
+.top-info{
+  display: flex;
+  padding-top: 10px;
+  font-size: small;
+  justify-content: center;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+}
+.header-icon{
+  font-size: 15px;
+}
+.header-icon-middle{
+  align-items: center;
+  color: rgba(2, 2, 2, 0.726);
+/* padding: 2%; */
+}
+.navigation-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffffcc;
+  position: fixed;
+  z-index: 10;
+  width: 100%; 
+  height: 8%;
+  box-sizing: border-box;
+}
+.space{
+  height: 20px;
+}
+
+.navigation-left-side {
+  display: flex;
+  justify-content: stretch;
+  cursor: pointer;
+  width: 50%;
+  box-sizing: border-box;
+
+}
+.navigation-left-side .toggle{
+  padding: 6px 9px 6px 9px;
+  border-radius: 80%;
+  margin: 0% 1% 0% 1%;
+  font-size: x-large;
+  transition: 0.7s;
+
+}
+
+.navigation-left-side .toggle:hover{
+ background-color: #000000a4;
+ margin: 0% 1% 0% 1%;
+ border-radius: 20%;
+ color: #f1f1f1;
+}
+.logo{
+  height: 100%;
+  padding: 1%;
+
+  transition: 0.6s;
+}
+.logo:hover{
+  border-radius: 80%;
+  padding: 1%;
+  background-color: #000000;
+  height: 100%;
+}
+.navigation-side{
+display: flex;
+justify-content: space-evenly;
+padding: 1%;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+  color: rgb(210, 170, 163);
+  padding: 2%;
+}
+#logo {
+  height: 28%;
+  padding: 5%;
+}
+.logo-t{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: blueviolet;
+}
+.overlay {
+  height: 50%;
+  width: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: rgba(49, 22, 65, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* padding: 1%; */
+  /* top: 25%; */
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* margin-top: 30px; */
+}
+
+.nav-link-header {
+  padding: 2%;
+  text-decoration: none;
+  align-items: center;
+  font-size: 100%;
+  color: #ffffffb2;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.nav-link-header :hover,
+.nav-link-header :focus {
+  color: #180505b6;
+  /* border: 1px solid #ffffffb2 ; */
+  padding: 2%;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 100%;
+  padding: 1%;
+  padding-right: 10px;
+  padding-left: 12px;
+  transition: 0.6s;
+  cursor: pointer;
+  border-radius: 40%;
+}
+.overlay .closebtn:hover{
+  background-color: #818181;
+  color: #f1f1f1;
+}
+.info {
+  text-align: center;
+  color: azure;
+  font-size: 10px;
+  width: 40px;
+}
+
+.nav-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 10px;
+  padding: 10px;
+}
+@media screen and (max-width:600px){
+  .top-header{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation-container{
+    width: 100%;
+    height: 50px;
+  }
+  .logo{
+    height: 100%;
+  }
+  #logo{
+    width: auto;
+    height: 60%;
+    mix-blend-mode: darken;
+  }
+  .overlay-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .overlay {
+    flex-direction: column;
+    height: 70%;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 40px;
+    padding: 1%;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+}
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
