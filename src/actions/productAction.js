@@ -30,7 +30,7 @@ import {
   DELETE_REVIEW_FAIL,
   CLEAR_ERRORS,
 } from "../constants/productConstants";
-axios.defaults.baseURL = "http://localhost:4000/api/v1";
+axios.defaults.baseURL = "https://ecommerce-backend-2uy5.onrender.com/api/v1";
 
 // Get All Products
 export const getProducts =
