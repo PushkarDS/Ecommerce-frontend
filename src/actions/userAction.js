@@ -37,7 +37,7 @@ import {
   CLEAR_ERRORS,
 } from "../constants/userConstants";
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:4000/api/v1";
+axios.defaults.baseURL = "https://ecommerce-backend-2uy5.onrender.com/api/v1";
 
 // Login
 export const login = (email, password) => async (dispatch) => {
